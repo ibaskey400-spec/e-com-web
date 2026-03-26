@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MY KART</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+  <div class="navbar">
+    <div class="left">
+    <div class="bag_logo"><i class="fa-solid fa-bag-shopping"></i></div>
+    <h2 class="heading">My Kart</h2>
+    </div>
+    <div class="cart_icon" onclick="goToCart()">
+      <a href="cart-checkout.html">
+      <i class="fa-sharp-duotone fa-solid fa-cart-shopping"></i>
+    <span id="cart-count">0</span></a></div>
+  </div>
+  <div class="controls">
+
+  <input type="text" id="search" placeholder="Search products...">
+
+  <select id="sort">
+    <option value="">Sort by Price</option>
+    <option value="low">Low → High</option>
+    <option value="high">High → Low</option>
+  </select>
+  <select id="category">
+    <option value="">All Categories</option>
+  </select>
+
+</div>
+  <div id="products"></div>
+  <div id="cart-section" style="display:none;">
+  <h2>Your Shopping Cart</h2>
+  <div id="cart-items"></div> <button onclick="closeCart()">Back to Shop</button>
+</div>
+</body>
+<script src="script.js"></script>
+</html>
